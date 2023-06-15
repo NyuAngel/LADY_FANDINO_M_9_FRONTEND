@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+} /*propiedad para dar un tamaño al ancho y alto de un elemento*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} /*inherit es una palabra clave especifica que una propiedad debe hererar su valor de su elemento principal*/
+body {
+  font: 1.2em/1.2 Helvetica, aria, sans-serif; /*Font es una propiedad para los estilos y tipo de fuente*/
+  margin: 0 3%;
+}
+h1 {
+  font-size: 1.8em; /*em es una unidad de medida*/
+  margin: 0.9em 0 0 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 1.5em 0 0 0;
+}
+img {
+  max-width: 100%; /*es una propiedad que define el ancho maximo de un elemento*/
+}
+figure {
+  background: black;
+  border-radius: 5px;
+  color: white;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  text-align: center;
+}
+figcaption {
+  font-size: 0.8em;
+}
+
+/*Responsive Design, regla @media asocia un grupo de declaraciones anidadas para aplicar estilos a diferentes dispositivos*/
+@media screen and (min-width: 794px) {
+  body {
+    background: rgba(0, 0, 255, 0.2);
+    margin: 25px 6%;
+  }
+  figure {
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  body {
+    background: rgba(0, 255, 0, 0.2);
+    margin: 25px 10%;
+    max-width: 1130px;
+  }
+  figure {
+    width: 30%;
+    margin-right: 2.5%;
+  }
+}
