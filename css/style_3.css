@@ -185,7 +185,7 @@
   .name {
     font-family: monospace;
     font-style: initial;
-    color: #ffffff ;
+    color: rgb(255, 255, 255) ;
     font-size: 20px;
     border: 10px double  rgb(230,0,255);
     margin-top: 10px;
